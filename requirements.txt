@@ -1,0 +1,12 @@
+fastapi should be installed with the following command:
+    pip install fastapi uvicorn
+
+
+architecture choice is pretty simple: we interact with our database which is a .csv file containing
+all the needed data. therefore, we create for our users a efficient api that is able to generate
+random questions for their app
+
+we have a main program like our c programming friends in our python. so no need to execute any
+command on terminal:
+
+uvicorn.run(api, host="0.0.0.0", port=8000)
