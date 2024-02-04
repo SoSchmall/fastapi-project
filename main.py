@@ -62,7 +62,6 @@ def get_all_questions():
 
 
 # random questions
-# 
 @api.get('/get_questions/{use}/{subjects}/')
 def get_random_questions(use: str, subjects: str = Path(...), num_questions: int = 5):
     """
